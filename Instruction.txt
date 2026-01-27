@@ -1,0 +1,4 @@
+git init
+git *
+git commit -m "Third commit"
+git push -u origin main
