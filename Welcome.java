@@ -4,6 +4,6 @@ public class Welcome {
         System.out.println("This  is my repository to store Java projects");
         System.out.println("My Java Program");
          System.out.println("This  is my repository to store Java projects");
-         System.out.println("This  is my running in Jenkin Pipeline");
+         System.out.println("This  is running in Jenkin Pipeline");
     }
 }
