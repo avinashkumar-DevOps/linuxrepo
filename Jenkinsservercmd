@@ -13,3 +13,21 @@ echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]"   https://pkg.jenki
 sudo apt update
 sudo apt install -y jenkins
 systemctl status jenkins
+
+
+
+---------------------------------------------------
+
+1. Jenkins Master is configured on a VM running Ubuntu 24.04 LTS hosted on Google Cloud Platform (GCP).
+2. On the Jenkins Master, agent communication is configured to use a random port
+(Jenkins → Manage Jenkins → Security → Agents → Select “Random”).
+3.Java 17 JDK is installed on all Jenkins agent (slave) machines.
+4. In AWS security groups, outbound access is allowed on ports 8080 and 443.
+5. The first Jenkins agent is configured on a Windows Server 2025 VM in AWS, with the workspace located at:
+C:\jenkins\developer
+6. The second Jenkins agent is configured on a VM running Ubuntu 24.04 LTS in GCP, with the workspace located at:
+/var/jenkins/performance
+
+---------------------------------
+
+
