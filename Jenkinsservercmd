@@ -28,6 +28,10 @@ C:\jenkins\developer
 6. The second Jenkins agent is configured on a VM running Ubuntu 24.04 LTS in GCP, with the workspace located at:
 /var/jenkins/performance
 
+
+
+java -jar jenkins.war --httpPort=8082
+
 ---------------------------------
 
 
