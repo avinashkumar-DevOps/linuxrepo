@@ -29,7 +29,7 @@ C:\jenkins\developer
 /var/jenkins/performance
 
 
-
+https://updates.jenkins.io/download/war/
 java -jar jenkins.war --httpPort=8082
 
 ---------------------------------
