@@ -1,0 +1,10 @@
+Example 1
+
+#/bin/bash
+echo "This is a shell script written by Avinash"
+ls
+echo "I am done running ls"
+SOMEVAR='text stuff this is my frist class'
+echo "$SOMEVAR"
+
+Example 2
