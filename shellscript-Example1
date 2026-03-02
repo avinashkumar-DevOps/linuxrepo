@@ -13,3 +13,102 @@ Example 2
 echo "Hello there"
 echo "My name is $(whoami)"
 echo "Nice to meet you
+
+
+Monitoring script
+
+hostname
+hostname-i
+ps
+free
+df -h
+
+
+
+Example Monitoring script  
+
+#!/bin/bash  
+echo "This is a shell script by Avinash"
+echo "the hostname of this gcp project swain machine is "
+hostname 
+echo "the IP  of this gcp project swain machine is "
+hostname -i
+ps
+echo "memory used in the machine"
+free
+echo "disk used in the machine"
+df -h
+echo "the above information from the machine"  
+
+
+
+
+
+by AI monitor script 
+
+#!/bin/bash
+
+# ==============================
+#  Author  : Avinash Kumar
+#  Purpose : System Information Script
+# ==============================
+
+# Color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo -e "${CYAN}==============================================${NC}"
+echo -e "${GREEN}   SYSTEM INFORMATION SCRIPT (GCP MACHINE)   ${NC}"
+echo -e "${CYAN}==============================================${NC}"
+
+echo -e "${YELLOW}📌 Script Author:${NC} Avinash Kumar"
+echo ""
+
+# Hostname
+echo -e "${BLUE}🔹 HOSTNAME DETAILS${NC}"
+echo -e "${CYAN}----------------------------------------------${NC}"
+hostname
+echo ""
+
+# IP Address
+echo -e "${BLUE}🔹 IP ADDRESS DETAILS${NC}"
+echo -e "${CYAN}----------------------------------------------${NC}"
+hostname -i
+echo ""
+
+# Running Processes
+echo -e "${BLUE}🔹 RUNNING PROCESSES${NC}"
+echo -e "${CYAN}----------------------------------------------${NC}"
+ps
+echo ""
+
+# Memory Usage
+echo -e "${BLUE}🔹 MEMORY USAGE${NC}"
+echo -e "${CYAN}----------------------------------------------${NC}"
+free -h
+echo ""
+
+# Disk Usage
+echo -e "${BLUE}🔹 DISK USAGE${NC}"
+echo -e "${CYAN}----------------------------------------------${NC}"
+df -h
+echo ""
+
+echo -e "${GREEN}✅ System information collected successfully.${NC}"
+echo -e "${CYAN}==============================================${NC}"
+
+
+
+---------------------------------------------------------------------------------------------------
+
+Arithmetic Operations : 
+#!/bin/bash
+# substract two numeric value
+((sum=10-5))
+#Print the result
+echo $sum
+
