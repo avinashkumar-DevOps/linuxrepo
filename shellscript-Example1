@@ -112,3 +112,38 @@ Arithmetic Operations :
 #Print the result
 echo $sum
 
+
+---------------------------------------------------------------------------------------------------
+
+Exercise :
+
+Write a script that shows 1. time and date 2. lists of logged-in users 3. shows running process create a new file with the name info and redirect the details in the info file.
+
+Sol: 
+#!/bin/bash
+
+# Redirect all output to file named "info"
+{
+    echo "===== SYSTEM INFORMATION ====="
+    echo ""
+
+    echo "1. Current Date and Time:"
+    date
+    echo ""
+
+    echo "2. Logged-in Users:"
+    who
+    echo ""
+
+    echo "3. Running Processes:"
+    ps -ef
+    echo ""
+
+    echo "===== END OF REPORT ====="
+} > info
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
